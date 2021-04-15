@@ -1,9 +1,9 @@
 version: "2.0"
 rules:
-- rule: monument rule
+- rule: Say goodbye anytime the user says goodbye
   steps:
-  - intent: monument
-  - action: utter_monument
+  - intent: goodbye
+  - action: utter_goodbye
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
