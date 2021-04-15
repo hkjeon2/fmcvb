@@ -1,0 +1,139 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - happy
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: information
+    examples: |
+      - what is your name?
+      - tell me your name
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: sports_venues
+    examples: |
+      - What type of venues do you have for sports?
+
+  - intent: food
+    examples: |
+      - Where can we eat as a team?
+      - Where can I eat that's unique to the area?
+
+  - intent: transportation/fm
+    examples: |
+      - How do we get to Fargo?
+      - How do we get to Moorhead?
+      - What airlines have direct flights into FAR Hector International Airport?
+      - let me know direct flights to FAR Hector International Airport.
+
+  - intent: transportation/westacres
+    examples: |
+      - How far of a drive is it from the airport to the West Acres Mall area?
+
+  - intent: transportation/companies
+    examples: |
+      - What companies do you recommend I hire for transporting people from Point A to Point B?
+
+  - intent: monument/movie
+    examples: |
+      - Was the movie Fargo filmed here? Is it a true story?
+
+  - intent: monument/murals
+    examples: |
+      - Where can I find the murals in Downtown Fargo?
+
+  - intent: monument/bison
+    examples: |
+      - Where can I find the painted bison around the FM Area?
+
+  - intent: meetings_venues
+    examples: |
+      - Where can I host a meeting downtown?
+      - What type of venues do you have for meetings?

@@ -1,0 +1,7 @@
+tests/
+models/
+
+# all directories
+**/__pycache__
+
+__init__.py

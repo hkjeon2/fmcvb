@@ -1,0 +1,84 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - information
+  - sports_venues
+  - food
+  - transportation
+  - monument
+  - meetings_venues
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_sports_venues:
+    - text: |-
+        [filter by sport](https://www.fargomoorhead.org/sports-venues/)
+        or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
+
+  utter_meetings_venues:
+    - text: |-
+        Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
+
+  utter_food:
+    - text: |-
+        Check out our [Group Friendly Dining
+        Blog](https://www.fargomoorhead.org/food-drink/article/group-friendly-places-eat-fargo/), 
+        [Group Friendly Dining Filter](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=group-friendly), 
+        Uniquely [Local restaurants](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=uniquely-local) – there are over 220 of them!
+
+  utter_transportation/fm:
+    - text: |-
+        [Getting to Fargo-Moorhead](https://www.fargomoorhead.org/plan-a-trip/directions-to-fargo-moorhead/) or
+        [Fargo Airport Airlines](https://fargoairport.com/fly-with-us/airlines/ )
+
+  utter_transportation/westacres:
+    - text: |-
+        [Only a 10-minute drive!](https://goo.gl/maps/VrryX8CoatHyDrFR9)
+
+  utter_transportation/companies:
+    - text: |-
+        [Charter Buses](https://www.fargomoorhead.org/plan-a-trip/getting-around/)
+
+  utter_monument/movie:
+    - text: |-
+        [No, but let us tell you more!](https://www.youtube.com/watch?v=DBr3-TFVbBs)
+
+  utter_monument/murals:
+    - text: |-
+        [Downtown Fargo-Moorhead Murals](https://www.fargomoorhead.org/arts-culture/article/murals-fargo-moorhead/)
+
+  utter_monument/bison:
+    - text: |-
+        [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
+
+actions:
+  - action_hello_world
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
