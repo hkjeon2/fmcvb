@@ -76,6 +76,29 @@ responses:
     - text: |-
         [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
 
+  utter_event/woodchipper:
+    - text: |-
+        [No, but here’s where you can see it. 😝](https://www.fargomoorhead.org/what-to-do/the-woodchipper-in-fargo/)
+
+  utter_event/now:
+    - text: |-
+        [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
+
+  utter_event/50thstate:
+    - text: |-
+        Why yes, we do! Come to the visitors center to join the [Best For Last Club](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/), if you can’t make it in person, fill out [the form](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/best-for-last-club-request/) and we will send you a commemorative t-shirt.
+
+  utter_todo:
+    - text: |-
+        Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
+        or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
+        Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
+    - buttons:
+        - title: Youth/High School
+          payload: "/todo_youth"
+        - title: College/Adult
+          payload: "/todo_adult"
+
 actions:
   - action_hello_world
 

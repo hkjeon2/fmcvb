@@ -47,3 +47,8 @@ stories:
     steps:
       - intent: food
       - action: utter_food
+
+  - story: todo Story
+    steps:
+      - intent: todo
+      - action: utter_todo

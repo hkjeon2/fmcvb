@@ -142,3 +142,18 @@ nlu:
     examples: |
       - Can I rent or borrow the FARGO woodchipper for my event?
       - possible to borrow woodchipper?
+
+  - intent: event/now
+    examples: |
+      - What's going on in town when I am visiting?
+
+  - intent: event/50thstate
+    examples: |
+      - North Dakota will be my 50th state, do you celebrate that accomplishment?
+
+  - intent: todo
+    examples: |
+      - What is there to do for my teams/athletes when they aren’t at the competition?
+      - What can I suggest my attendees do in their off-time?
+      - If I only had one day in Fargo, what would be the must-see spots?
+      - What can I do that's free in Fargo?
