@@ -137,3 +137,8 @@ nlu:
     examples: |
       - Where can I host a meeting downtown?
       - What type of venues do you have for meetings?
+
+  - intent: event/woodchipper
+    examples: |
+      - Can I rent or borrow the FARGO woodchipper for my event?
+      - possible to borrow woodchipper?
