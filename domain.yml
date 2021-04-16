@@ -121,6 +121,9 @@ forms:
           - sports_venues
         type: from_entity
 
+entities:
+  - sports_category
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
