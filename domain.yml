@@ -102,7 +102,7 @@ responses:
         or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
         Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
 
-  utter_ask_category:
+  utter_ask_sports_category:
     - text: what sports type do you want?
 
 actions:

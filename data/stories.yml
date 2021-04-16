@@ -38,10 +38,13 @@ stories:
       - intent: sports_venues
       - action: sports_category_form
       - active_loop: sports_category_form
-      - active_loop: null
-      - intent: inform
-        entities:
+      - slot_was_set:
+          - requested_slot: "sports_category"
+      - slot_was_set:
           - sports_category: "tennis"
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
       - action: utter_sports_venues
 
   - story: meetings_venues
