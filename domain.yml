@@ -84,7 +84,7 @@ responses:
 
   utter_event/now:
     - text: |-
-        [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
+        Check out our [events calendar](https://www.fargomoorhead.org/events/) and use the date filter to find out what’s going on when you’re here.
 
   utter_event/50thstate:
     - text: |-
