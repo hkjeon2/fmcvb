@@ -99,11 +99,10 @@ responses:
           payload: "/todo_youth"
         - title: College/Adult
           payload: "/todo_adult"
-      text: |-
-        Check out the followings.
-          1. [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own
-          2. visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
-          3. [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
+      text: |
+        Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own
+        and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
+        or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
 
         Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
 
