@@ -17,6 +17,8 @@ intents:
   - event
   - todo
   - inform
+  - todo_youth
+  - todo_adult
 
 responses:
   utter_greet:
@@ -101,6 +103,25 @@ responses:
         Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
         or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
         Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
+
+  utter_todo_youth:
+    - text: |-
+        [Family Fun Filter](https://www.fargomoorhead.org/things-to-do/family-fun/),
+        [Midwestern Foods](https://www.fargomoorhead.org/restaurants-bars/article/midwestern-fargo-moorhead/),
+        [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
+        [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/),
+        [Adventure Passport](https://www.fargomoorhead.org/things-to-do/adventure-passport/),
+        [Family Weekend in Fargo: Warmer Weather](https://www.fargomoorhead.org/plan-a-trip/article/family-weekend-in-fargo/),
+        [Family Weekend in FMWF: Colder Weather](https://www.fargomoorhead.org/family-fun/article/fargo-moorhead-family-fun-itinerary-winter-weekend/)
+
+  utter_todo_adult:
+    - text: |-
+        [Breweries](https://www.fargomoorhead.org/things-to-do/local-breweries/),
+        [Crafts and Drafts Pass](https://www.fargomoorhead.org/things-to-do/craft-beer-trail/),
+        [Nightlife](https://www.fargomoorhead.org/nightlife/article/best-places-for-live-music-in-fargo-moorhead/),
+        [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
+        [Guide for College Students](https://www.fargomoorhead.org/about-fargo-moorhead/article/its-a-college-town/),
+        [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/) (this one is dependent on it being a college event)
 
   utter_ask_sports_category:
     - text: what sports type do you want?
