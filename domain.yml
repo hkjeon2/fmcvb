@@ -16,7 +16,7 @@ intents:
   - meetings_venues
   - event
   - todo
-  - inform
+  - inform_sports_category
   - todo_youth
   - todo_adult
 
@@ -140,7 +140,7 @@ forms:
     sports_category:
       - entity: sports_category
         intent:
-          - inform
+          - inform_sports_category
           - sports_venues
         type: from_entity
 
