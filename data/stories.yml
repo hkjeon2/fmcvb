@@ -36,6 +36,12 @@ stories:
   - story: sports_venues
     steps:
       - intent: sports_venues
+      - action: sports_category_form
+      - active_loop: sports_category_form
+      - active_loop: null
+      - intent: inform
+        entities:
+          - sports_category: "tennis"
       - action: utter_sports_venues
 
   - story: meetings_venues

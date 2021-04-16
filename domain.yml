@@ -16,6 +16,7 @@ intents:
   - meetings_venues
   - event
   - todo
+  - inform
 
 responses:
   utter_greet:
@@ -39,7 +40,7 @@ responses:
 
   utter_sports_venues:
     - text: |-
-        [filter by sport](https://www.fargomoorhead.org/sports-venues/)
+        [filter by sport](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category})
         or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
 
   utter_meetings_venues:
@@ -101,8 +102,24 @@ responses:
         or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
         Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
 
+  utter_ask_category:
+    - text: what sports type do you want?
+
 actions:
   - action_hello_world
+
+slots:
+  sports_category:
+    type: rasa.shared.core.slots.TextSlot
+
+forms:
+  sports_category_form:
+    sports_category:
+      - entity: sports_category
+        intent:
+          - inform
+          - sports_venues
+        type: from_entity
 
 session_config:
   session_expiration_time: 60

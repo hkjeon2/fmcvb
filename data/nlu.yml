@@ -97,9 +97,33 @@ nlu:
       - am I talking to a bot?
       - am I talking to a human?
 
+  - intent: inform
+    examples: |
+      - [archery](sports_category)
+      - [baseball](sports_category)
+      - [softball](sports_category)
+      - [basketball](sports_category)
+      - [disc golf](sports_category)
+      - [figure skating](sports_category)
+      - [football](sports_category)
+      - [golf](sports_category)
+      - [hockey](sports_category)
+      - [horseshoes](sports_category)
+      - [lacrosse](sports_category)
+      - [pickleball](sports_category)
+      - [rugby](sports_category)
+      - [skate parks](sports_category)
+      - [soccer](sports_category)
+      - [swimming](sports_category)
+      - [tennis](sports_category)
+      - [track](sports_category)
+      - [ultimate disc](sports_category)
+      - [volleyball](sports_category)
+      - [wrestling](sports_category)
+
   - intent: sports_venues
     examples: |
-      - What type of venues do you have for sports?
+      - What type of venues do you have for [tennis](sports_category) sports?
 
   - intent: food
     examples: |
