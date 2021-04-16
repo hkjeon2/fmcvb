@@ -111,6 +111,8 @@ nlu:
     examples: |
       - Where can we eat as a team?
       - Where can I eat that's unique to the area?
+      - where can i eat?
+      - recommend food
   - intent: transportation/fm
     examples: |
       - How do we get to Fargo?
