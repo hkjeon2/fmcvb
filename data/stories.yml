@@ -47,6 +47,16 @@ stories:
       - active_loop: null
       - action: utter_sports_venues
 
+  - story: sports_venues path2
+    steps:
+      - intent: sports_venues
+        entities:
+          - sports_category: "tennis"
+      - action: sports_category_form
+      - active_loop: sports_category_form
+      - active_loop: null
+      - action: utter_sports_venues
+
   - story: meetings_venues
     steps:
       - intent: meetings_venues
