@@ -15,7 +15,7 @@ pipeline:
   epochs: 100
 - name: FallbackClassifier
   threshold: 0.3
-  ambiguity_threshold: 0.1
+  ambiguity_threshold: 0.01
 policies:
 - name: MemoizationPolicy
 - name: TEDPolicy
