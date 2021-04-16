@@ -193,7 +193,32 @@ nlu:
     examples: |
       - What is there to do for college or adult when they aren’t at the competition?
 
+  - synonym: baseballsoftball
+    examples: |
+      - baseball
+      - softball
+
+  - synonym: disc-golf
+    examples: |
+      - disc golf
+      - disc-golf
+
   - synonym: figure-skating
     examples: |
       - figure skating
       - figure-skating
+
+  - synonym: skate-parks
+    examples: |
+      - skate parks
+      - skate-parks
+
+  - synonym: swimmingdiving
+    examples: |
+      - swimming
+      - diving
+
+  - synonym: ultimate-disc
+    examples: |
+      - ultimate disc
+      - ultimate-disc
