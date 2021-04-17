@@ -1,152 +1,144 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - information
-  - sports_venues
-  - food
-  - transportation
-  - monument
-  - meetings_venues
-  - event
-  - todo
-  - inform_sports_category
-  - todo_youth
-  - todo_adult
-
-responses:
-  utter_greet:
-    - text: "Hello! How can I help you?"
-
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-    - text: "Did that help you?"
-
-  utter_happy:
-    - text: "Great, carry on!"
-
-  utter_goodbye:
-    - text: "Bye"
-
-  utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
-
-  utter_sports_venues:
-    - text: |-
-        [filter by sport](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category})
-        or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
-
-  utter_meetings_venues:
-    - text: |-
-        Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
-
-  utter_food:
-    - text: |-
-        Check out our [Group Friendly Dining
-        Blog](https://www.fargomoorhead.org/food-drink/article/group-friendly-places-eat-fargo/), 
-        [Group Friendly Dining Filter](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=group-friendly), 
-        Uniquely [Local restaurants](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=uniquely-local) – there are over 220 of them!
-
-  utter_transportation/fm:
-    - text: |-
-        [Getting to Fargo-Moorhead](https://www.fargomoorhead.org/plan-a-trip/directions-to-fargo-moorhead/) or
-        [Fargo Airport Airlines](https://fargoairport.com/fly-with-us/airlines/ )
-
-  utter_transportation/westacres:
-    - text: |-
-        [Only a 10-minute drive!](https://goo.gl/maps/VrryX8CoatHyDrFR9)
-
-  utter_transportation/companies:
-    - text: |-
-        [Charter Buses](https://www.fargomoorhead.org/plan-a-trip/getting-around/)
-
-  utter_monument/movie:
-    - text: |-
-        [No, but let us tell you more!](https://www.youtube.com/watch?v=DBr3-TFVbBs)
-
-  utter_monument/murals:
-    - text: |-
-        [Downtown Fargo-Moorhead Murals](https://www.fargomoorhead.org/arts-culture/article/murals-fargo-moorhead/)
-
-  utter_monument/bison:
-    - text: |-
-        [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
-
-  utter_event/woodchipper:
-    - text: |-
-        [No, but here’s where you can see it. 😝](https://www.fargomoorhead.org/what-to-do/the-woodchipper-in-fargo/)
-
-  utter_event/now:
-    - text: |-
-        Check out our [events calendar](https://www.fargomoorhead.org/events/) and use the date filter to find out what’s going on when you’re here.
-
-  utter_event/50thstate:
-    - text: |-
-        Why yes, we do! Come to the visitors center to join the [Best For Last Club](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/), if you can’t make it in person, fill out [the form](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/best-for-last-club-request/) and we will send you a commemorative t-shirt.
-
-  utter_todo:
-    - buttons:
-        - title: Youth/High School
-          payload: "/todo_youth"
-        - title: College/Adult
-          payload: "/todo_adult"
-      text: |
-        Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own
-        and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
-        or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
-
-        Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
-
-  utter_todo_youth:
-    - text: |-
-        [Family Fun Filter](https://www.fargomoorhead.org/things-to-do/family-fun/),
-        [Midwestern Foods](https://www.fargomoorhead.org/restaurants-bars/article/midwestern-fargo-moorhead/),
-        [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
-        [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/),
-        [Adventure Passport](https://www.fargomoorhead.org/things-to-do/adventure-passport/),
-        [Family Weekend in Fargo: Warmer Weather](https://www.fargomoorhead.org/plan-a-trip/article/family-weekend-in-fargo/),
-        [Family Weekend in FMWF: Colder Weather](https://www.fargomoorhead.org/family-fun/article/fargo-moorhead-family-fun-itinerary-winter-weekend/)
-
-  utter_todo_adult:
-    - text: |-
-        [Breweries](https://www.fargomoorhead.org/things-to-do/local-breweries/),
-        [Crafts and Drafts Pass](https://www.fargomoorhead.org/things-to-do/craft-beer-trail/),
-        [Nightlife](https://www.fargomoorhead.org/nightlife/article/best-places-for-live-music-in-fargo-moorhead/),
-        [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
-        [Guide for College Students](https://www.fargomoorhead.org/about-fargo-moorhead/article/its-a-college-town/),
-        [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/) (this one is dependent on it being a college event)
-
-  utter_ask_sports_category:
-    - text: what sports type do you want?
-
-actions:
-  - action_hello_world
-
-slots:
-  sports_category:
-    type: rasa.shared.core.slots.TextSlot
-
-forms:
-  sports_category_form:
-    sports_category:
-      - entity: sports_category
-        intent:
-          - inform_sports_category
-          - sports_venues
-        type: from_entity
-
-entities:
-  - sports_category
-
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- information:
+    use_entities: true
+- sports_venues:
+    use_entities: true
+- food:
+    use_entities: true
+- transportation:
+    use_entities: true
+- monument:
+    use_entities: true
+- meetings_venues:
+    use_entities: true
+- event:
+    use_entities: true
+- todo:
+    use_entities: true
+- inform_sports_category:
+    use_entities: true
+- todo_youth:
+    use_entities: true
+- todo_adult:
+    use_entities: true
+entities:
+- sports_category
+slots:
+  sports_category:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hello! How can I help you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_sports_venues:
+  - text: |-
+      Please click the following [filter by sport](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category})
+      or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
+  utter_meetings_venues:
+  - text: Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
+  utter_food:
+  - text: |-
+      Check out our [Group Friendly Dining
+      Blog](https://www.fargomoorhead.org/food-drink/article/group-friendly-places-eat-fargo/), 
+      [Group Friendly Dining Filter](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=group-friendly), 
+      Uniquely [Local restaurants](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=uniquely-local) – there are over 220 of them!
+  utter_transportation/fm:
+  - text: |-
+      Please click the following [Getting to Fargo-Moorhead](https://www.fargomoorhead.org/plan-a-trip/directions-to-fargo-moorhead/) or
+      [Fargo Airport Airlines](https://fargoairport.com/fly-with-us/airlines/ )
+  utter_transportation/westacres:
+  - text: Please click the following [Only a 10-minute drive!](https://goo.gl/maps/VrryX8CoatHyDrFR9)
+  utter_transportation/companies:
+  - text: Please check out [Charter Buses](https://www.fargomoorhead.org/plan-a-trip/getting-around/)
+  utter_monument/movie:
+  - text: '[Let us tell you more about the movie Fargo!](https://www.youtube.com/watch?v=DBr3-TFVbBs)'
+  utter_monument/murals:
+  - text: Please check out [Downtown Fargo-Moorhead Murals](https://www.fargomoorhead.org/arts-culture/article/murals-fargo-moorhead/)
+  utter_monument/bison:
+  - text: Please check out [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
+  utter_event/woodchipper:
+  - text: '[Here’s where you can see the woodchipper. 😝](https://www.fargomoorhead.org/what-to-do/the-woodchipper-in-fargo/)'
+  utter_event/now:
+  - text: Check out our [events calendar](https://www.fargomoorhead.org/events/) and use the date filter to find out what’s going on when you’re here.
+  utter_event/50thstate:
+  - text: Please come to the visitors center to join the [Best For Last Club](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/), if you can’t make it in person, fill out [the form](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/best-for-last-club-request/) and we will send you a commemorative t-shirt.
+  utter_todo:
+  - buttons:
+    - payload: /todo_youth
+      title: Youth/High School
+    - payload: /todo_adult
+      title: College/Adult
+    text: |
+      Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own
+      and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
+      or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
+
+      Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
+  utter_todo_youth:
+  - text: |-
+      [Family Fun Filter](https://www.fargomoorhead.org/things-to-do/family-fun/),
+      [Midwestern Foods](https://www.fargomoorhead.org/restaurants-bars/article/midwestern-fargo-moorhead/),
+      [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
+      [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/),
+      [Adventure Passport](https://www.fargomoorhead.org/things-to-do/adventure-passport/),
+      [Family Weekend in Fargo: Warmer Weather](https://www.fargomoorhead.org/plan-a-trip/article/family-weekend-in-fargo/),
+      [Family Weekend in FMWF: Colder Weather](https://www.fargomoorhead.org/family-fun/article/fargo-moorhead-family-fun-itinerary-winter-weekend/)
+  utter_todo_adult:
+  - text: |-
+      [Breweries](https://www.fargomoorhead.org/things-to-do/local-breweries/),
+      [Crafts and Drafts Pass](https://www.fargomoorhead.org/things-to-do/craft-beer-trail/),
+      [Nightlife](https://www.fargomoorhead.org/nightlife/article/best-places-for-live-music-in-fargo-moorhead/),
+      [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
+      [Guide for College Students](https://www.fargomoorhead.org/about-fargo-moorhead/article/its-a-college-town/),
+      [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/) (this one is dependent on it being a college event)
+  utter_ask_sports_category:
+  - text: what sports type do you want?
+actions:
+- action_hello_world
+forms:
+  sports_category_form:
+    sports_category:
+    - entity: sports_category
+      intent:
+      - inform_sports_category
+      - sports_venues
+      type: from_entity
+e2e_actions: []
