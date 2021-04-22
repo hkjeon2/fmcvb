@@ -104,7 +104,7 @@ nlu:
       - [volleyball](sports_category)
       - [wrestling](sports_category)
   - intent: inform_sports_venue
-    example: |
+    examples: |
       - [Fargo South High Sports Arena](sports_venue)
       - [Anderson Softball Complex](sports_venue)
       - [Hulbert Aquatic Center](sports_venue)
