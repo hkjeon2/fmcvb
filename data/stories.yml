@@ -71,3 +71,27 @@ stories:
     steps:
       - intent: todo
       - action: utter_todo
+
+  - story: accommodation happy path1
+    steps:
+      - intent: accommodation
+      - action: sports_venue_form
+      - active_loop: sports_venue_form
+      - slot_was_set:
+          - requested_slot: "sports_venue"
+      - slot_was_set:
+          - sports_venue: "fargodome"
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: utter_accommodation
+
+  - story: accommodation happy path2
+    steps:
+      - intent: accommodation
+        entities:
+          - sports_venue: "sheels arena"
+      - action: sports_venue_form
+      - active_loop: sports_venue_form
+      - active_loop: null
+      - action: utter_accommodation

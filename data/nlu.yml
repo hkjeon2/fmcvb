@@ -103,10 +103,63 @@ nlu:
       - [ultimate disc](sports_category)
       - [volleyball](sports_category)
       - [wrestling](sports_category)
+  - intent: inform_sports_venue
+    example: |
+      - [Fargo South High Sports Arena](sports_venue)
+      - [Anderson Softball Complex](sports_venue)
+      - [Hulbert Aquatic Center](sports_venue)
+      - [Island Park Pool](sports_venue)
+      - [Rustad Recreation Center](sports_venue)
+      - [Lemke Park](sports_venue)
+      - [El Zagal Golf Course](sports_venue)
+      - [West Fargo Sports Arena](sports_venue)
+      - [Lewis & Clark Park](sports_venue)
+      - [Matson Memorial Field](sports_venue)
+      - [Longfellow Park](sports_venue)
+      - [South Elmwood Park](sports_venue)
+      - [Horace Mann Park](sports_venue)
+      - [Newman Outdoor Field](sports_venue)
+      - [Moorhead Sports Center](sports_venue)
+      - [Ellig Sports Complex](sports_venue)
+      - [North Softball Complex](sports_venue)
+      - [Lincoln Park](sports_venue)
+      - [Southside Regional Park](sports_venue)
+      - [Tharaldson Little League Complex](sports_venue)
+      - [Tharaldson Baseball Complex](sports_venue)
+      - [Nemzek Fieldhouse](sports_venue)
+      - [Trollwood Park](sports_venue)
+      - [Iwen Park](sports_venue)
+      - [Sanford Health Athletic Complex](sports_venue)
+      - [Metro Recreation Center](sports_venue)
+      - [Rabanus Sand Volleyball Complex](sports_venue)
+      - [Jack Williams Stadium](sports_venue)
+      - [Pepsi Soccer Complex](sports_venue)
+      - [Mickelson Softball Fields](sports_venue)
+      - [Dike West](sports_venue)
+      - [FARGODOME](sports_venue)
+      - [Scheels Arena](sports_venue)
+      - [Courts Plus Community Fitness](sports_venue)
+      - [Centennial Athletic Complex](sports_venue)
+      - [John E. Carlson Coliseum](sports_venue)
+      - [Cullen Hockey Center](sports_venue)
+      - [Southwest Youth Ice Arena](sports_venue)
+      - [Oak Grove Park](sports_venue)
+      - [Madison Park](sports_venue)
+      - [McKinley Park](sports_venue)
+      - [Brunsdale Park](sports_venue)
+      - [Edgewood Golf Course](sports_venue)
+      - [Fargo-Moorhead Curling Club](sports_venue)
+      - [Island Park](sports_venue)
   - intent: sports_venues
     examples: |
       - What type of venues do you have for [tennis](sports_category) sports?
       - What type of venues do you have for [disc golf]{"entity": "sports_category", "value": "disc-golf"} sports?
+  - intent: accommodation
+    examples: |
+      - how many hotels are from [fargodome](sports_venue)?
+      - how many hotels are near [sheels arena](sports_venue)?
+      - hotels from [madison park](sports_venue)
+      - hotels near [north softball complex](sports_venue)
   - intent: food
     examples: |
       - Where can we eat as a team?
