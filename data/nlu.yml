@@ -160,6 +160,7 @@ nlu:
       - how many hotels are near [sheels arena](sports_venue)?
       - hotels from [madison park](sports_venue)
       - hotels near [north softball complex](sports_venue)
+      - hotels?
   - intent: food
     examples: |
       - Where can we eat as a team?
