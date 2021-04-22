@@ -84,7 +84,7 @@ stories:
       - slot_was_set:
           - requested_slot: null
       - active_loop: null
-      - action: utter_accommodation
+      - action: action_get_hotels_url
 
   - story: accommodation happy path2
     steps:
@@ -94,4 +94,4 @@ stories:
       - action: sports_venue_form
       - active_loop: sports_venue_form
       - active_loop: null
-      - action: utter_accommodation
+      - action: action_get_hotels_url

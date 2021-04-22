@@ -25,3 +25,22 @@ class ActionHelloWorld(Action):
         dispatcher.utter_message(text="Hello World!")
 
         return []
+
+class ActionGetHotelsUrl(Action):
+
+    def name(self) -> Text:
+        return "action_get_hotels_url"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        sports_venue = tracker.get_slot("sports_venue")
+        if sports_venue:
+            sports_venue_replaced = sports_venue.replace(" ", "+")
+            msg = f"Please click the following [hotels near {sports_venue}](https://www.google.com/maps/search/hotels+near+{sports_venue_replaced},+fargo)"
+        else:
+            msg = f"Sorry, we could not find {sports_venue}"
+
+        dispatcher.utter_message(text=msg)
+
+        return []
