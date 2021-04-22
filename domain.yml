@@ -157,7 +157,7 @@ forms:
           - sports_venues
         type: from_entity
   sports_venue_form:
-    sports_category:
+    sports_venue:
       - entity: sports_venue
         intent:
           - inform_sports_venue
