@@ -214,6 +214,8 @@ nlu:
       - What can I suggest my attendees do in their off-time?
       - If I only had one day in Fargo, what would be the must-see spots?
       - What can I do that's free in Fargo?
+      - what to do in freetime
+      - what to do in free-hour
   - intent: todo_youth
     examples: |
       - What is there to do for high school or youth when they aren’t at the competition?
