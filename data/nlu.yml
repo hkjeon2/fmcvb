@@ -161,6 +161,8 @@ nlu:
       - hotels from [madison park](sports_venue)
       - hotels near [north softball complex](sports_venue)
       - hotels?
+      - where can i stay?
+      - where to stay
   - intent: food
     examples: |
       - Where can we eat as a team?
