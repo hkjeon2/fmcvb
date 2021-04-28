@@ -26,6 +26,10 @@ pipeline:
     analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
+  - name: CountVectorsFeaturizer
+    analyzer: "char"
+    min_ngram: 3
+    max_ngram: 5
   - name: DIETClassifier
     epochs: 100
   - name: EntitySynonymMapper
@@ -33,7 +37,8 @@ pipeline:
     epochs: 100
 
 policies:
-  - name: MemoizationPolicy
+  - name: AugmentedMemoizationPolicy
+    max_history: 2
   - name: TEDPolicy
     max_history: 5
     epochs: 100
