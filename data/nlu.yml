@@ -137,7 +137,6 @@ nlu:
       - [Mickelson Softball Fields](sports_venue)
       - [Dike West](sports_venue)
       - [FARGODOME](sports_venue)
-      - [Scheels]{"entity": "sports_venue", "value": "Scheels Arena"}
       - [Scheels Arena](sports_venue)
       - [Courts Plus Community Fitness](sports_venue)
       - [Centennial Athletic Complex](sports_venue)
