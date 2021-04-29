@@ -154,6 +154,10 @@ nlu:
       - What type of venues do you have for [disc golf]{"entity": "sports_category", "value": "disc-golf"} sports?
       - where can I play [tennis](sports_category)?
       - Where to play [tennis](sports_category)?
+      - sports venue
+      - [soccer](sports_category) venue
+      - venue for [soccer](sports_category)
+      - what venue for [golf](sports_category)
   - intent: accommodation
     examples: |
       - how many hotels are from [fargodome](sports_venue)?
