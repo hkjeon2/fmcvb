@@ -19,7 +19,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
   - name: FallbackClassifier
-    threshold: 0.6
+    threshold: 0.45
     ambiguity_threshold: 0.01
   # - name: SpacyNLP
   # - name: SpacyTokenizer
