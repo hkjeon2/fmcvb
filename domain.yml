@@ -35,13 +35,11 @@ intents:
       use_entities: true
   - todo:
       use_entities: true
-  - inform_sports_category:
+  - inform:
       use_entities: true
   - todo_youth:
       use_entities: true
   - todo_adult:
-      use_entities: true
-  - inform_sports_venue:
       use_entities: true
   - accommodation:
       use_entities: true
@@ -80,7 +78,7 @@ responses:
     - text: I am a bot, powered by Rasa.
   utter_sports_venues:
     - text: |-
-        Please click the following [filter by sport](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category})
+        Please click the following [filter by {sports_category}](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category})
         or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
   utter_meetings_venues:
     - text: Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
@@ -145,22 +143,25 @@ responses:
     - text: Please click the following [hotels near {sports_venue}](https://www.google.com/maps/search/hotels+near+{sports_venue},+fargo)
   utter_ask_sports_venue:
     - text: what venue do you want?
+  utter_please_rephrase:
+    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 actions:
   - action_hello_world
   - action_get_hotels_url
+  - action_clear_sports_category
 forms:
   sports_category_form:
     sports_category:
       - entity: sports_category
         intent:
-          - inform_sports_category
+          - inform
           - sports_venues
         type: from_entity
   sports_venue_form:
     sports_venue:
       - entity: sports_venue
         intent:
-          - inform_sports_venue
+          - inform
           - accommodation
         type: from_entity
 e2e_actions: []

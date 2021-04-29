@@ -80,7 +80,7 @@ nlu:
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
-  - intent: inform_sports_category
+  - intent: inform
     examples: |
       - [archery](sports_category)
       - [baseball](sports_category)
@@ -103,8 +103,6 @@ nlu:
       - [ultimate disc](sports_category)
       - [volleyball](sports_category)
       - [wrestling](sports_category)
-  - intent: inform_sports_venue
-    examples: |
       - [Fargo South High Sports Arena](sports_venue)
       - [Anderson Softball Complex](sports_venue)
       - [Hulbert Aquatic Center](sports_venue)
@@ -154,6 +152,8 @@ nlu:
     examples: |
       - What type of venues do you have for [tennis](sports_category) sports?
       - What type of venues do you have for [disc golf]{"entity": "sports_category", "value": "disc-golf"} sports?
+      - where can I play [tennis](sports_category)?
+      - Where to play [tennis](sports_category)?
   - intent: accommodation
     examples: |
       - how many hotels are from [fargodome](sports_venue)?
@@ -169,15 +169,18 @@ nlu:
       - Where can I eat that's unique to the area?
       - where can i eat?
       - recommend food
+      - where to eat
   - intent: transportation/fm
     examples: |
       - How do we get to Fargo?
       - How do we get to Moorhead?
       - What airlines have direct flights into FAR Hector International Airport?
       - let me know direct flights to FAR Hector International Airport.
+      - how to get to fargo or moorhead
   - intent: transportation/westacres
     examples: |
       - How far of a drive is it from the airport to the West Acres Mall area?
+      - how to get to West Acres Mall area
   - intent: transportation/companies
     examples: |
       - What companies do you recommend I hire for transporting people from Point A to Point B?
@@ -188,23 +191,28 @@ nlu:
   - intent: monument/murals
     examples: |
       - Where can I find the murals in Downtown Fargo?
+      - how to find murals
       - murals
   - intent: monument/bison
     examples: |
       - Where can I find the painted bison around the FM Area?
       - painted bison
+      - how to find painted bison
   - intent: meetings_venues
     examples: |
       - Where can I host a meeting downtown?
       - venue for a meeting
       - host a meeting
+      - where to host a meeting
   - intent: event/woodchipper
     examples: |
       - Can I rent or borrow the FARGO woodchipper for my event?
       - possible to borrow woodchipper?
+      - where to borrow woodchipper
   - intent: event/now
     examples: |
       - What's going on in town when I am visiting?
+      - looking for event in town
   - intent: event/50thstate
     examples: |
       - North Dakota will be my 50th state, do you celebrate that accomplishment?

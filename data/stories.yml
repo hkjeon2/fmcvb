@@ -46,6 +46,7 @@ stories:
           - requested_slot: null
       - active_loop: null
       - action: utter_sports_venues
+      - action: action_clear_sports_category
 
   - story: sports_venues path2
     steps:
@@ -56,6 +57,7 @@ stories:
       - active_loop: sports_category_form
       - active_loop: null
       - action: utter_sports_venues
+      - action: action_clear_sports_category
 
   - story: meetings_venues
     steps:
