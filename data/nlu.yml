@@ -82,6 +82,7 @@ nlu:
 - intent: bot_challenge
   examples: |
     - what is your name?
+    - tell me your name
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
@@ -89,9 +90,6 @@ nlu:
     - What is your name?
     - name?
     - what is your name
-- intent: information
-  examples: |
-    - tell me your name
 - intent: inform
   examples: |
     - [archery](sports_category)
