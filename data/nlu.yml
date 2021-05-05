@@ -1,256 +1,266 @@
 version: "2.0"
 nlu:
-  - intent: greet
-    examples: |
-      - hey
-      - hello
-      - hi
-      - hello there
-      - good morning
-      - good evening
-      - moin
-      - hey there
-      - let's go
-      - hey dude
-      - goodmorning
-      - goodevening
-      - good afternoon
-  - intent: goodbye
-    examples: |
-      - good afternoon
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
-  - intent: mood_great
-    examples: |
-      - perfect
-      - great
-      - amazing
-      - feeling like a king
-      - wonderful
-      - I am feeling very good
-      - I am great
-      - I am amazing
-      - I am going to save the world
-      - super stoked
-      - extremely good
-      - so so perfect
-      - so good
-      - so perfect
-      - happy
-  - intent: mood_unhappy
-    examples: |
-      - my day was horrible
-      - I am sad
-      - I don't feel very well
-      - I am disappointed
-      - super sad
-      - I'm so sad
-      - sad
-      - very sad
-      - unhappy
-      - not good
-      - not very good
-      - extremly sad
-      - so saad
-      - so sad
-  - intent: information
-    examples: |
-      - what is your name?
-      - tell me your name
-  - intent: bot_challenge
-    examples: |
-      - are you a bot?
-      - are you a human?
-      - am I talking to a bot?
-      - am I talking to a human?
-  - intent: inform
-    examples: |
-      - [archery](sports_category)
-      - [baseball](sports_category)
-      - [softball](sports_category)
-      - [basketball](sports_category)
-      - [disc golf](sports_category)
-      - [figure skating](sports_category)
-      - [football](sports_category)
-      - [golf](sports_category)
-      - [hockey](sports_category)
-      - [horseshoes](sports_category)
-      - [lacrosse](sports_category)
-      - [pickleball](sports_category)
-      - [rugby](sports_category)
-      - [skate parks](sports_category)
-      - [soccer](sports_category)
-      - [swimming](sports_category)
-      - [tennis](sports_category)
-      - [track](sports_category)
-      - [ultimate disc](sports_category)
-      - [volleyball](sports_category)
-      - [wrestling](sports_category)
-      - [Fargo South High Sports Arena](sports_venue)
-      - [Anderson Softball Complex](sports_venue)
-      - [Hulbert Aquatic Center](sports_venue)
-      - [Island Park Pool](sports_venue)
-      - [Rustad Recreation Center](sports_venue)
-      - [Lemke Park](sports_venue)
-      - [El Zagal Golf Course](sports_venue)
-      - [West Fargo Sports Arena](sports_venue)
-      - [Lewis & Clark Park](sports_venue)
-      - [Matson Memorial Field](sports_venue)
-      - [Longfellow Park](sports_venue)
-      - [South Elmwood Park](sports_venue)
-      - [Horace Mann Park](sports_venue)
-      - [Newman Outdoor Field](sports_venue)
-      - [Moorhead Sports Center](sports_venue)
-      - [Ellig Sports Complex](sports_venue)
-      - [North Softball Complex](sports_venue)
-      - [Lincoln Park](sports_venue)
-      - [Southside Regional Park](sports_venue)
-      - [Tharaldson Little League Complex](sports_venue)
-      - [Tharaldson Baseball Complex](sports_venue)
-      - [Nemzek Fieldhouse](sports_venue)
-      - [Trollwood Park](sports_venue)
-      - [Iwen Park](sports_venue)
-      - [Sanford Health Athletic Complex](sports_venue)
-      - [Metro Recreation Center](sports_venue)
-      - [Rabanus Sand Volleyball Complex](sports_venue)
-      - [Jack Williams Stadium](sports_venue)
-      - [Pepsi Soccer Complex](sports_venue)
-      - [Mickelson Softball Fields](sports_venue)
-      - [Dike West](sports_venue)
-      - [FARGODOME](sports_venue)
-      - [Scheels Arena](sports_venue)
-      - [Courts Plus Community Fitness](sports_venue)
-      - [Centennial Athletic Complex](sports_venue)
-      - [John E. Carlson Coliseum](sports_venue)
-      - [Cullen Hockey Center](sports_venue)
-      - [Southwest Youth Ice Arena](sports_venue)
-      - [Oak Grove Park](sports_venue)
-      - [Madison Park](sports_venue)
-      - [McKinley Park](sports_venue)
-      - [Brunsdale Park](sports_venue)
-      - [Edgewood Golf Course](sports_venue)
-      - [Fargo-Moorhead Curling Club](sports_venue)
-      - [Island Park](sports_venue)
-  - intent: sports_venues
-    examples: |
-      - What type of venues do you have for [tennis](sports_category) sports?
-      - What type of venues do you have for [disc golf]{"entity": "sports_category", "value": "disc-golf"} sports?
-      - where can I play [tennis](sports_category)?
-      - Where to play [tennis](sports_category)?
-      - sports venue
-      - [soccer](sports_category) venue
-      - venue for [soccer](sports_category)
-      - what venue for [golf](sports_category)
-  - intent: accommodation
-    examples: |
-      - how many hotels are from [fargodome](sports_venue)?
-      - how many hotels are near [sheels arena](sports_venue)?
-      - hotels from [madison park](sports_venue)
-      - hotels near [north softball complex](sports_venue)
-      - hotels?
-      - where can i stay?
-      - where to stay
-  - intent: food
-    examples: |
-      - Where can we eat as a team?
-      - Where can I eat that's unique to the area?
-      - where can i eat?
-      - recommend food
-      - where to eat
-  - intent: transportation/fm
-    examples: |
-      - How do we get to Fargo?
-      - How do we get to Moorhead?
-      - What airlines have direct flights into FAR Hector International Airport?
-      - let me know direct flights to FAR Hector International Airport.
-      - how to get to fargo or moorhead
-  - intent: transportation/westacres
-    examples: |
-      - How far of a drive is it from the airport to the West Acres Mall area?
-      - how to get to West Acres Mall area
-  - intent: transportation/companies
-    examples: |
-      - What companies do you recommend I hire for transporting people from Point A to Point B?
-  - intent: monument/movie
-    examples: |
-      - Was the movie Fargo filmed here? Is it a true story?
-      - fargo movie
-  - intent: monument/murals
-    examples: |
-      - Where can I find the murals in Downtown Fargo?
-      - how to find murals
-      - murals
-  - intent: monument/bison
-    examples: |
-      - Where can I find the painted bison around the FM Area?
-      - painted bison
-      - how to find painted bison
-  - intent: meetings_venues
-    examples: |
-      - Where can I host a meeting downtown?
-      - venue for a meeting
-      - host a meeting
-      - where to host a meeting
-  - intent: event/woodchipper
-    examples: |
-      - Can I rent or borrow the FARGO woodchipper for my event?
-      - possible to borrow woodchipper?
-      - where to borrow woodchipper
-  - intent: event/now
-    examples: |
-      - What's going on in town when I am visiting?
-      - looking for event in town
-  - intent: event/50thstate
-    examples: |
-      - North Dakota will be my 50th state, do you celebrate that accomplishment?
-  - intent: todo
-    examples: |
-      - What is there to do for my teams/athletes when they aren’t at the competition?
-      - What can I suggest my attendees do in their off-time?
-      - If I only had one day in Fargo, what would be the must-see spots?
-      - What can I do that's free in Fargo?
-      - what to do in freetime
-      - what to do in free-hour
-  - intent: todo_youth
-    examples: |
-      - What is there to do for high school or youth when they aren’t at the competition?
-  - intent: todo_adult
-    examples: |
-      - What is there to do for college or adult when they aren’t at the competition?
-  - synonym: disc-golf
-    examples: |
-      - disc golf
-  - synonym: baseballsoftball
-    examples: |
-      - baseball
-      - softball
-  - synonym: figure-skating
-    examples: |
-      - figure skating
-  - synonym: skate-parks
-    examples: |
-      - skate parks
-  - synonym: swimmingdiving
-    examples: |
-      - swimming
-      - diving
-  - synonym: ultimate-disc
-    examples: |
-      - ultimate disc
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - love you
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - happy
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - what is your name?
+    - tell me your name
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - What is your name?
+    - name?
+    - what is your name
+- intent: inform
+  examples: |
+    - [archery](sports_category)
+    - [baseball](sports_category)
+    - [softball](sports_category)
+    - [basketball](sports_category)
+    - [disc golf](sports_category)
+    - [figure skating](sports_category)
+    - [football](sports_category)
+    - [golf](sports_category)
+    - [hockey](sports_category)
+    - [horseshoes](sports_category)
+    - [lacrosse](sports_category)
+    - [pickleball](sports_category)
+    - [rugby](sports_category)
+    - [skate parks](sports_category)
+    - [soccer](sports_category)
+    - [swimming](sports_category)
+    - [tennis](sports_category)
+    - [track](sports_category)
+    - [ultimate disc](sports_category)
+    - [volleyball](sports_category)
+    - [wrestling](sports_category)
+    - [Fargo South High Sports Arena](sports_venue)
+    - [Anderson Softball Complex](sports_venue)
+    - [Hulbert Aquatic Center](sports_venue)
+    - [Island Park Pool](sports_venue)
+    - [Rustad Recreation Center](sports_venue)
+    - [Lemke Park](sports_venue)
+    - [El Zagal Golf Course](sports_venue)
+    - [West Fargo Sports Arena](sports_venue)
+    - [Lewis & Clark Park](sports_venue)
+    - [Matson Memorial Field](sports_venue)
+    - [Longfellow Park](sports_venue)
+    - [South Elmwood Park](sports_venue)
+    - [Horace Mann Park](sports_venue)
+    - [Newman Outdoor Field](sports_venue)
+    - [Moorhead Sports Center](sports_venue)
+    - [Ellig Sports Complex](sports_venue)
+    - [North Softball Complex](sports_venue)
+    - [Lincoln Park](sports_venue)
+    - [Southside Regional Park](sports_venue)
+    - [Tharaldson Little League Complex](sports_venue)
+    - [Tharaldson Baseball Complex](sports_venue)
+    - [Nemzek Fieldhouse](sports_venue)
+    - [Trollwood Park](sports_venue)
+    - [Iwen Park](sports_venue)
+    - [Sanford Health Athletic Complex](sports_venue)
+    - [Metro Recreation Center](sports_venue)
+    - [Rabanus Sand Volleyball Complex](sports_venue)
+    - [Jack Williams Stadium](sports_venue)
+    - [Pepsi Soccer Complex](sports_venue)
+    - [Mickelson Softball Fields](sports_venue)
+    - [Dike West](sports_venue)
+    - [FARGODOME](sports_venue)
+    - [Scheels Arena](sports_venue)
+    - [Courts Plus Community Fitness](sports_venue)
+    - [Centennial Athletic Complex](sports_venue)
+    - [John E. Carlson Coliseum](sports_venue)
+    - [Cullen Hockey Center](sports_venue)
+    - [Southwest Youth Ice Arena](sports_venue)
+    - [Oak Grove Park](sports_venue)
+    - [Madison Park](sports_venue)
+    - [McKinley Park](sports_venue)
+    - [Brunsdale Park](sports_venue)
+    - [Edgewood Golf Course](sports_venue)
+    - [Fargo-Moorhead Curling Club](sports_venue)
+    - [Island Park](sports_venue)
+- intent: sports_venues
+  examples: |
+    - What type of venues do you have for [tennis](sports_category) sports?
+    - What type of venues do you have for [disc golf]{"entity": "sports_category", "value": "disc-golf"} sports?
+    - where can I play [tennis](sports_category)?
+    - Where to play [tennis](sports_category)?
+    - sports venue
+    - [soccer](sports_category) venue
+    - venue for [soccer](sports_category)
+    - what venue for [golf](sports_category)
+- intent: accommodation
+  examples: |
+    - how many hotels are from [fargodome](sports_venue)?
+    - how many hotels are near [sheels arena](sports_venue)?
+    - hotels from [madison park](sports_venue)
+    - hotels near [north softball complex](sports_venue)
+    - hotels?
+    - where can i stay?
+    - where to stay
+- intent: food
+  examples: |
+    - Where can we eat as a team?
+    - Where can I eat that's unique to the area?
+    - where can i eat?
+    - recommend food
+    - where to eat
+- intent: transportation/fm
+  examples: |
+    - How do we get to Fargo?
+    - How do we get to Moorhead?
+    - What airlines have direct flights into FAR Hector International Airport?
+    - let me know direct flights to FAR Hector International Airport.
+    - how to get to fargo or moorhead
+- intent: transportation/westacres
+  examples: |
+    - How far of a drive is it from the airport to the West Acres Mall area?
+    - how to get to West Acres Mall area
+- intent: transportation/companies
+  examples: |
+    - What companies do you recommend I hire for transporting people from Point A to Point B?
+- intent: monument/movie
+  examples: |
+    - Was the movie Fargo filmed here? Is it a true story?
+    - fargo movie
+- intent: monument/murals
+  examples: |
+    - Where can I find the murals in Downtown Fargo?
+    - how to find murals
+    - murals
+- intent: monument/bison
+  examples: |
+    - Where can I find the painted bison around the FM Area?
+    - painted bison
+    - how to find painted bison
+- intent: meetings_venues
+  examples: |
+    - Where can I host a meeting downtown?
+    - venue for a meeting
+    - host a meeting
+    - where to host a meeting
+- intent: event/woodchipper
+  examples: |
+    - Can I rent or borrow the FARGO woodchipper for my event?
+    - possible to borrow woodchipper?
+    - where to borrow woodchipper
+- intent: event/now
+  examples: |
+    - What's going on in town when I am visiting?
+    - looking for event in town
+- intent: event/50thstate
+  examples: |
+    - North Dakota will be my 50th state, do you celebrate that accomplishment?
+- intent: todo
+  examples: |
+    - What is there to do for my teams/athletes when they aren’t at the competition?
+    - What can I suggest my attendees do in their off-time?
+    - If I only had one day in Fargo, what would be the must-see spots?
+    - What can I do that's free in Fargo?
+    - what to do in freetime
+    - what to do in free-hour
+- intent: todo_youth
+  examples: |
+    - What is there to do for high school or youth when they aren’t at the competition?
+- intent: todo_adult
+  examples: |
+    - What is there to do for college or adult when they aren’t at the competition?
+- synonym: disc-golf
+  examples: |
+    - disc golf
+- synonym: baseballsoftball
+  examples: |
+    - baseball
+    - softball
+- synonym: figure-skating
+  examples: |
+    - figure skating
+- synonym: skate-parks
+  examples: |
+    - skate parks
+- synonym: swimmingdiving
+  examples: |
+    - swimming
+    - diving
+- synonym: ultimate-disc
+  examples: |
+    - ultimate disc
