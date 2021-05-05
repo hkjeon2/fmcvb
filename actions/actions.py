@@ -60,8 +60,8 @@ class ActionClearSportsCategory(Action):
         return [SlotSet("sports_category", None), SlotSet("sports_category_spelled_correctly", None),
             SlotSet("sports_category_match", None)]
 
-sports_categories = pathlib.Path("data/sports_category.txt").read_text().split("\n")
-sports_venues = pathlib.Path("data/sports_venues.txt").read_text().split("\n")
+sports_categories = pathlib.Path("db/sports_category.txt").read_text().split("\n")
+sports_venues = pathlib.Path("db/sports_venues.txt").read_text().split("\n")
 
 class ValidateSportsCategoryFrom(FormValidationAction):
     def name(self) -> Text:
