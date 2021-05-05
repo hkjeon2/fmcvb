@@ -1,53 +1,53 @@
-version: '2.0'
+version: "2.0"
 config:
   store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- information:
-    use_entities: true
-- sports_venues:
-    use_entities: true
-- food:
-    use_entities: true
-- transportation:
-    use_entities: true
-- monument:
-    use_entities: true
-- meetings_venues:
-    use_entities: true
-- event:
-    use_entities: true
-- todo:
-    use_entities: true
-- inform:
-    use_entities: true
-- todo_youth:
-    use_entities: true
-- todo_adult:
-    use_entities: true
-- accommodation:
-    use_entities: true
-- nlu_fallback:
-    use_entities: true
+  - greet:
+      use_entities: true
+  - goodbye:
+      use_entities: true
+  - affirm:
+      use_entities: true
+  - deny:
+      use_entities: true
+  - mood_great:
+      use_entities: true
+  - mood_unhappy:
+      use_entities: true
+  - bot_challenge:
+      use_entities: true
+  - information:
+      use_entities: true
+  - sports_venues:
+      use_entities: true
+  - food:
+      use_entities: true
+  - transportation:
+      use_entities: true
+  - monument:
+      use_entities: true
+  - meetings_venues:
+      use_entities: true
+  - event:
+      use_entities: true
+  - todo:
+      use_entities: true
+  - inform:
+      use_entities: true
+  - todo_youth:
+      use_entities: true
+  - todo_adult:
+      use_entities: true
+  - accommodation:
+      use_entities: true
+  - nlu_fallback:
+      use_entities: true
 entities:
-- sports_category
-- sports_venue
+  - sports_category
+  - sports_venue
 slots:
   sports_category:
     type: rasa.shared.core.slots.TextSlot
@@ -74,85 +74,85 @@ slots:
     type: rasa.shared.core.slots.TextSlot
 responses:
   utter_greet:
-  - text: Hello! How can I help you?
+    - text: Hello! How can I help you?
   utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
+    - image: https://i.imgur.com/nGF1K8f.jpg
+      text: "Here is something to cheer you up:"
   utter_did_that_help:
-  - text: Did that help you?
+    - text: Did that help you?
   utter_happy:
-  - text: Great, carry on!
+    - text: Great, carry on!
   utter_goodbye:
-  - text: Bye
+    - text: Bye
   utter_iamabot:
-  - text: I am FMCVB concierge chatbot!
+    - text: I am FMCVB concierge chatbot!
   utter_sports_venues:
     - text: |-
         Please click the following [filter by {sports_category_match}](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category_match})
         or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
   utter_meetings_venues:
-  - text: Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
+    - text: Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
   utter_food:
-  - text: |-
-      Check out our [Group Friendly Dining
-      Blog](https://www.fargomoorhead.org/food-drink/article/group-friendly-places-eat-fargo/), 
-      [Group Friendly Dining Filter](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=group-friendly), 
-      Uniquely [Local restaurants](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=uniquely-local) – there are over 220 of them!
+    - text: |-
+        Check out our [Group Friendly Dining
+        Blog](https://www.fargomoorhead.org/food-drink/article/group-friendly-places-eat-fargo/), 
+        [Group Friendly Dining Filter](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=group-friendly), 
+        Uniquely [Local restaurants](https://www.fargomoorhead.org/restaurants-bars/#?filters=featured-category=uniquely-local) – there are over 220 of them!
   utter_transportation/fm:
-  - text: |-
-      Please click the following [Getting to Fargo-Moorhead](https://www.fargomoorhead.org/plan-a-trip/directions-to-fargo-moorhead/) or
-      [Fargo Airport Airlines](https://fargoairport.com/fly-with-us/airlines/ )
+    - text: |-
+        Please click the following [Getting to Fargo-Moorhead](https://www.fargomoorhead.org/plan-a-trip/directions-to-fargo-moorhead/) or
+        [Fargo Airport Airlines](https://fargoairport.com/fly-with-us/airlines/ )
   utter_transportation/westacres:
-  - text: Please click the following [Only a 10-minute drive!](https://goo.gl/maps/VrryX8CoatHyDrFR9)
+    - text: Please click the following [Only a 10-minute drive!](https://goo.gl/maps/VrryX8CoatHyDrFR9)
   utter_transportation/companies:
-  - text: Please check out [Charter Buses](https://www.fargomoorhead.org/plan-a-trip/getting-around/)
+    - text: Please check out [Charter Buses](https://www.fargomoorhead.org/plan-a-trip/getting-around/)
   utter_monument/movie:
-  - text: '[Let us tell you more about the movie Fargo!](https://www.youtube.com/watch?v=DBr3-TFVbBs)'
+    - text: "[Let us tell you more about the movie Fargo!](https://www.youtube.com/watch?v=DBr3-TFVbBs)"
   utter_monument/murals:
-  - text: Please check out [Downtown Fargo-Moorhead Murals](https://www.fargomoorhead.org/arts-culture/article/murals-fargo-moorhead/)
+    - text: Please check out [Downtown Fargo-Moorhead Murals](https://www.fargomoorhead.org/arts-culture/article/murals-fargo-moorhead/)
   utter_monument/bison:
-  - text: Please check out [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
+    - text: Please check out [The story behind the painted buffalo](https://www.fargomoorhead.org/about-fargo-moorhead/article/behind-painted-fargo/)
   utter_event/woodchipper:
-  - text: '[Here’s where you can see the woodchipper. 😝](https://www.fargomoorhead.org/what-to-do/the-woodchipper-in-fargo/)'
+    - text: "[Here’s where you can see the woodchipper. 😝](https://www.fargomoorhead.org/what-to-do/the-woodchipper-in-fargo/)"
   utter_event/now:
-  - text: Check out our [events calendar](https://www.fargomoorhead.org/events/) and use the date filter to find out what’s going on when you’re here.
+    - text: Check out our [events calendar](https://www.fargomoorhead.org/events/) and use the date filter to find out what’s going on when you’re here.
   utter_event/50thstate:
-  - text: Please come to the visitors center to join the [Best For Last Club](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/), if you can’t make it in person, fill out [the form](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/best-for-last-club-request/) and we will send you a commemorative t-shirt.
+    - text: Please come to the visitors center to join the [Best For Last Club](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/), if you can’t make it in person, fill out [the form](https://www.fargomoorhead.org/plan-a-trip/best-for-last-club/best-for-last-club-request/) and we will send you a commemorative t-shirt.
   utter_todo:
-  - buttons:
-    - payload: /todo_youth
-      title: Youth/High School
-    - payload: /todo_adult
-      title: College/Adult
-    text: |
-      Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own
-      and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
-      or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
+    - buttons:
+        - payload: /todo_youth
+          title: Youth/High School
+        - payload: /todo_adult
+          title: College/Adult
+      text: |
+        Check out these [team-building activities](https://www.fargomoorhead.org/conventions-meetings/article/team-building-activities-in-fargo/) with a small group or venture off on your own
+        and visit our [Must-see Attractions](https://www.fargomoorhead.org/things-to-do/attractions/)
+        or [17 free things to do in Fargo](https://www.fargomoorhead.org/things-to-do/article/14-free-things-fargo/).
 
-      Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
+        Need more ideas? Here’s a list of all [things to do](https://www.fargomoorhead.org/things-to-do/)
   utter_todo_youth:
-  - text: |-
-      [Family Fun Filter](https://www.fargomoorhead.org/things-to-do/family-fun/),
-      [Midwestern Foods](https://www.fargomoorhead.org/restaurants-bars/article/midwestern-fargo-moorhead/),
-      [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
-      [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/),
-      [Adventure Passport](https://www.fargomoorhead.org/things-to-do/adventure-passport/),
-      [Family Weekend in Fargo: Warmer Weather](https://www.fargomoorhead.org/plan-a-trip/article/family-weekend-in-fargo/),
-      [Family Weekend in FMWF: Colder Weather](https://www.fargomoorhead.org/family-fun/article/fargo-moorhead-family-fun-itinerary-winter-weekend/)
+    - text: |-
+        [Family Fun Filter](https://www.fargomoorhead.org/things-to-do/family-fun/),
+        [Midwestern Foods](https://www.fargomoorhead.org/restaurants-bars/article/midwestern-fargo-moorhead/),
+        [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
+        [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/),
+        [Adventure Passport](https://www.fargomoorhead.org/things-to-do/adventure-passport/),
+        [Family Weekend in Fargo: Warmer Weather](https://www.fargomoorhead.org/plan-a-trip/article/family-weekend-in-fargo/),
+        [Family Weekend in FMWF: Colder Weather](https://www.fargomoorhead.org/family-fun/article/fargo-moorhead-family-fun-itinerary-winter-weekend/)
   utter_todo_adult:
-  - text: |-
-      [Breweries](https://www.fargomoorhead.org/things-to-do/local-breweries/),
-      [Crafts and Drafts Pass](https://www.fargomoorhead.org/things-to-do/craft-beer-trail/),
-      [Nightlife](https://www.fargomoorhead.org/nightlife/article/best-places-for-live-music-in-fargo-moorhead/),
-      [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
-      [Guide for College Students](https://www.fargomoorhead.org/about-fargo-moorhead/article/its-a-college-town/),
-      [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/) (this one is dependent on it being a college event)
+    - text: |-
+        [Breweries](https://www.fargomoorhead.org/things-to-do/local-breweries/),
+        [Crafts and Drafts Pass](https://www.fargomoorhead.org/things-to-do/craft-beer-trail/),
+        [Nightlife](https://www.fargomoorhead.org/nightlife/article/best-places-for-live-music-in-fargo-moorhead/),
+        [Event Happenings Calendar](https://www.fargomoorhead.org/events/),
+        [Guide for College Students](https://www.fargomoorhead.org/about-fargo-moorhead/article/its-a-college-town/),
+        [Things to Do if You’re Under 21](https://www.fargomoorhead.org/things-to-do/article/things-to-do-fargo-under-21/) (this one is dependent on it being a college event)
   utter_ask_sports_category:
-  - text: what sports type do you want?
+    - text: what sports type do you want?
   utter_accommodation:
-  - text: Please click the following [hotels near {sports_venue}](https://www.google.com/maps/search/hotels+near+{sports_venue},+fargo)
+    - text: Please click the following [hotels near {sports_venue}](https://www.google.com/maps/search/hotels+near+{sports_venue},+fargo)
   utter_ask_sports_venue:
-  - text: what venue do you want?
+    - text: what venue do you want?
   utter_please_rephrase:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_ask_sports_category_spelled_correctly:
@@ -168,21 +168,14 @@ actions:
   - action_clear_sports_category
   - validate_sports_category_form
   - validate_sports_venue_form
-=======
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
-actions:
-- action_hello_world
-- action_get_hotels_url
-- action_clear_sports_category
->>>>>>> 138ba631deb5286952fcbbd4fefe2f2ea2ec8936
 forms:
   sports_category_form:
     sports_category:
-    - entity: sports_category
-      intent:
-      - inform
-      - sports_venues
-      type: from_entity
+      - entity: sports_category
+        intent:
+          - inform
+          - sports_venues
+        type: from_entity
   sports_venue_form:
     sports_venue:
       - entity: sports_venue
@@ -192,4 +185,3 @@ forms:
         type: from_entity
     sports_venue_selected:
       - type: from_text
-e2e_actions: []
