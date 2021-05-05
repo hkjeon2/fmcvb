@@ -52,6 +52,9 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: true
+  sports_category_match:
+    type: rasa.shared.core.slots.TextSlot
+    influence_conversation: false
   sports_venue:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
@@ -62,6 +65,11 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: false
+  sports_category_spelled_correctly:
+    type: bool
+    auto_fill: false
+  sports_venue_selected:
+    type: rasa.shared.core.slots.TextSlot
 responses:
   utter_greet:
     - text: Hello! How can I help you?
@@ -78,7 +86,7 @@ responses:
     - text: I am a bot, powered by Rasa.
   utter_sports_venues:
     - text: |-
-        Please click the following [filter by {sports_category}](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category})
+        Please click the following [filter by {sports_category_match}](https://www.fargomoorhead.org/sports-venues/#?filters=category={sports_category_match})
         or [RFP Request](https://www.fargomoorhead.org/sports-venues/sports-request-for-information/)
   utter_meetings_venues:
     - text: Check out all our meeting facilities on [this page](https://www.fargomoorhead.org/meetings/)
@@ -145,10 +153,19 @@ responses:
     - text: what venue do you want?
   utter_please_rephrase:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_ask_sports_category_spelled_correctly:
+    - buttons:
+        - title: Yes
+          payload: "/affirm"
+        - title: No
+          payload: "/deny"
+      text: Is {sports_category_match} correct?
 actions:
   - action_hello_world
   - action_get_hotels_url
   - action_clear_sports_category
+  - validate_sports_category_form
+  - validate_sports_venue_form
 forms:
   sports_category_form:
     sports_category:
@@ -164,4 +181,6 @@ forms:
           - inform
           - accommodation
         type: from_entity
+    sports_venue_selected:
+      - type: from_text
 e2e_actions: []

@@ -1,7 +1,8 @@
 tests/
 models/
+.vscode/
 
 # all directories
 **/__pycache__
-
+*.dot
 __init__.py
