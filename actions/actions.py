@@ -154,6 +154,8 @@ class ValidateSportsVenueForm(FormValidationAction):
         domain: DomainDict,
     ) -> Dict[Text, Any]:
 
+        print("test", end=",")
+        print(tracker.get_slot("sports_venue"))
         top_match = process.extractOne(slot_value, sports_venues)
         if top_match[1] == 100:
             return {"sports_venue": slot_value, "sports_venue_selected": slot_value}
